@@ -1,4 +1,4 @@
-# .github/workflows/build-k-site.yml
+# .github/workflows/build-k-site.yaml
 
 name: Build K-Site Public Static Pages
 
