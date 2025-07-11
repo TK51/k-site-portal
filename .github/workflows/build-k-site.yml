@@ -1,0 +1,41 @@
+# .github/workflows/build-k-site.yml
+
+name: Build K-Site Public Static Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-k-site:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install markdown jinja2 pyyaml
+
+      - name: Run K-Site builder
+        run: |
+          python src/k-site.py
+
+      - name: Commit /docs/ output
+        run: |
+          git config --global user.name 'KSite Bot'
+          git config --global user.email 'actions@github.com'
+          git add docs/
+          git commit -m "Auto-build K-Site Public output" || echo "Nothing to commit"
+          git push
