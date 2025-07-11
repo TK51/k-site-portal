@@ -1,0 +1,33 @@
+# === K-Site Configuration ===
+
+ga_tracking_id: G-MGQVC84LKD        # Replace with your GA4 ID or leave blank/null to disable
+site_base_path: "/k-site-portal/"      # <- 🔧 REQUIRED for correct Home/Back links in GitHub Pages
+
+rules:
+  ignore_folders:
+    - .github
+    - src
+    - config
+    - docs
+    - __pycache__
+
+  classify_folders: true         # Enable auto-folder detection
+
+  viewer_extensions:
+    - .txt
+    - .md
+    - .py
+    - .json
+    - .csv
+
+  image_extensions:
+    - .jpg
+    - .jpeg
+    - .png
+
+  download_extensions:
+    - .txt
+    - .md
+    - .py
+    - .json
+    - .csv
