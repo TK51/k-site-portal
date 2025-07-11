@@ -1,28 +1,15 @@
-# K-Site-Public – Minimal Setup Guide
+# K-Site Portal — Folder Transformation Engine
 
-K-Site-Public converts a GitHub repo into a static site of viewer pages and folder indexes.
+K-Site is a folder transformation engine.  
+It renders any structured folder into a static, zero-login website — with portable viewers, download-ready modes, and traceable pages (when hosted online).
 
-No GUI. No config hell. Just structure at the end of fully-automated pipeline.
+📦 No login  
+🧱 No build system  
+🧰 No dependencies
 
----
-
-## 🔧 SETUP
-
-## 🗂 STRUCTURE
-
-- `/content/` → your input files  
-- `/docs/` → auto-built static site  
-- `/docs/download/` → copied raw files  
-- `/src/templates/` → Jinja2 templates  
-- `/k-site.py` → the builder script
+Just structure → site.
 
 ---
-
-## 📁 FILE TYPES SUPPORTED
-
-## 🧭 NAVIGATION
-
-## 🚀 HOW TO BUILD
 
 ## 📑 Site Contents
 
