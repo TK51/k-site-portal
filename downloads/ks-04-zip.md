@@ -13,7 +13,7 @@ Use it to share offline toolkits, docs, or deliverables - just unzip and view.
 4. Share the `.zip` - double-click `index.html` or `index-static.html` inside
 
 **🎥 See it in action:**  
-- YouTube: [K-Site Project Overview](https://youtu.be/Ff_-9Zq4IJY)
+- YouTube: [K-Site Zip Overview](https://youtu.be/-193h0AdSSU)
 
 ---
 
