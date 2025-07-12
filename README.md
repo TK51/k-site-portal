@@ -1,7 +1,9 @@
 # K-Site Portal – Folder Transformation Engine
 
 **For recruiters:** this site shows how I structure, automate, and deliver working content systems - not demos, not slides - real outputs.  
+
 **For hiring managers:** this isn’t theory. It’s how I build and ship structure under pressure - with traceable, live logic.  
+
 **For non-tech users:** this is not a product. It’s a method. You upload a folder → it becomes a simple, clickable site - no login, no install, no noise.
 
 ---
