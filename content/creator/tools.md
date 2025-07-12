@@ -27,5 +27,5 @@ Full tool folder:
 These utilities shaped the early pipeline logic of K-Site — before viewers, before ZIPs.  
 They live on in the AIPOS logic system.
 
-—
-Built by Kay — [LinkedIn](https://linkedin.com/in/taras-khamardiuk)
+--
+Built by Kay - [LinkedIn](https://linkedin.com/in/taras-khamardiuk)
