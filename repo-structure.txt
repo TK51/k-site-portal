@@ -1,0 +1,36 @@
+k-site-portal/
+├── .github/
+│   └── workflows/
+│       └── build-k-site.yaml               # CI build trigger
+│
+├── config/
+│   └── settings.yaml                       # Build rules + GA ID
+│
+├── content/                                # All viewer-rendered materials
+│   ├── methods/
+│   │   ├── ks-01-public.md
+│   │   ├── ks-02-private.md
+│   │   ├── ks-03-core.md
+│   │   ├── ks-04-zip.md
+│   │   └── README.md                       # Optional intro to methods
+│   ├── portal-readme.md                    # If you want alt landing instead of root README
+│   └── made-by.md                          # Former MADE-BY.md, now as viewer page
+│
+├── downloads/                              # All raw files (.zip, .exe, etc.)
+│   ├── KSite_CoreBuilder_Windows.zip
+│   └── KSite_ZipBuilder_Windows.zip
+│
+├── templates/
+│   ├── index.html                          # Folder index layout
+│   └── viewer.html                         # Page viewer layout
+│
+├── src/
+│   └── k-site.py                           # Main build engine (patched)
+│
+├── README.md                               # This becomes styled portal homepage
+├── LICENSE                                 # Leave here (non-rendered)
+└── docs/                                   # OUTPUT – auto-built by engine
+    ├── index.html
+    ├── methods/
+    ├── download/
+    └── docs.zip
