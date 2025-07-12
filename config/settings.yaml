@@ -31,3 +31,4 @@ rules:
     - .py
     - .json
     - .csv
+    - .zip
