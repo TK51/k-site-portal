@@ -1,7 +1,7 @@
-# K-Site Portal — Folder Transformation Engine
+# K-Site Portal - Folder Transformation Engine
 
 K-Site is a folder transformation engine.  
-It renders any structured folder into a static, zero-login website — with portable viewers, download-ready modes, and traceable pages (when hosted online).
+It renders any structured folder into a static, zero-login website - with portable viewers, download-ready modes, and traceable pages (when hosted online).
 
 📦 No login  
 🧱 No build system  
@@ -21,7 +21,7 @@ Just structure → site.
 
 ---
 
-🛠️ Built with **K-Site** — a zero-GUI, automation-first static site generator.  
+🛠️ Built with **K-Site** - a zero-GUI, automation-first static site generator.  
 → Want your docs turned into a site like this? [Contact me on LinkedIn](https://www.linkedin.com/in/taras-khamardiuk)
 
-— *Kay*
+- *Kay*
