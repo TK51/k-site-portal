@@ -28,7 +28,7 @@ readable by humans, crawlable by systems.
 
 ---
 
-## What Kay Actually Did
+## What I Actually Did
 
 - Designed the system logic (3 delivery modes + 1 portal site)  
 - Built all engines: core viewer, zip-packager, dual desktop apps  
