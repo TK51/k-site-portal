@@ -20,6 +20,6 @@ Each turns a structured folder into a usable static website.
 ---
 
 🎥 Introductory walkthrough of all 4 modes:  
-[video link](https://youtu.be/Ff_-9Zq4IJY)
+[K-Site  Folder Transformation Engine](https://youtu.be/Ff_-9Zq4IJY)
 
 📎 Built by Kay - https://linkedin.com/in/taras-khamardiuk
