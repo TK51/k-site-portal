@@ -78,6 +78,17 @@ for file in DOWNLOADS_SRC.iterdir():
     if file.suffix.lower() in [".zip", ".exe", ".appimage"]:
         shutil.copy2(file, DOWNLOAD_DIR / file.name)
 
+# === DOWNLOADS README PATCH (REQUIRED TO RENDER download/index.html)
+downloads_readme = DOWNLOADS_SRC / "README.md"
+if downloads_readme.exists():
+    with open(downloads_readme, "r", encoding="utf-8") as f:
+        raw = f.read()
+        rendered = fix_links_in_readme(raw)
+
+    downloads_index = DOWNLOAD_DIR / "index.html"
+    with open(downloads_index, "w", encoding="utf-8") as f:
+        f.write(rendered)
+
 # === FILE PIPELINE ===
 for root, _, files in os.walk(CONTENT_DIR):
     rel_root = Path(root).relative_to(CONTENT_DIR)
