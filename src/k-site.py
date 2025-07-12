@@ -60,16 +60,6 @@ def generate_site_toc():
     for item in sorted(OUTPUT_DIR.iterdir()):
         if item.is_dir() and (item / "index.html").exists():
             toc_lines.append(f"- 📁 [{item.name}]({item.name}/index.html)")
-        elif item.is_file() and item.suffix == ".html" and "-viewer" in item.stem:
-            label = item.stem.replace("-viewer", "")
-            ext = Path(label).suffix
-            emoji = {
-                ".py": "📄",
-                ".md": "📝",
-                ".json": "🔢",
-                ".csv": "📊"
-            }.get(ext, "📄")
-            toc_lines.append(f"- {emoji} [{label}]({item.name})")
     return "\n".join(toc_lines)
 
 # === JINJA SETUP ===
