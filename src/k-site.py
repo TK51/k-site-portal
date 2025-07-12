@@ -177,6 +177,14 @@ if readme_path.exists():
     with open(readme_path, "r", encoding="utf-8") as f:
         readme_md = f.read()
 
+methods_readme = METHODS_DIR / "README.md"
+if methods_readme.exists():
+    with open(methods_readme, "r", encoding="utf-8") as f:
+        raw = f.read()
+        rendered = fix_links_in_readme(raw)
+    with open(OUTPUT_DIR / "methods" / "index.html", "w", encoding="utf-8") as f:
+        f.write(rendered)
+
 downloads_readme = DOWNLOADS_SRC / "README.md"
 if downloads_readme.exists():
     with open(downloads_readme, "r", encoding="utf-8") as f:
