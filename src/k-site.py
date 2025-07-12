@@ -196,7 +196,8 @@ if downloads_readme.exists():
     with open(downloads_index, "w", encoding="utf-8") as f:
         f.write(rendered)
 
-# === ROOT README TOC PATCH
+## === ROOT README TOC PATCH
+readme_path = BASE_DIR / "README.md"
 if readme_path.exists():
     with open(readme_path, "r", encoding="utf-8") as f:
         readme_md = f.read()
@@ -213,30 +214,20 @@ if readme_path.exists():
     else:
         readme_md += f"\n\n## Site Contents\n\n{toc_block}"
 
-    readme_html = fix_links_in_readme(readme_md)
+    rendered_readme = fix_links_in_readme(readme_md)
 
-    landing_html = f"""<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>GitSite Landing</title>
-  <style>
-    body {{ font-family: system-ui, sans-serif; margin: 2rem; background: #fff; color: #000; }}
-    a {{ color: #1a73e8; text-decoration: none; }}
-    a:hover {{ text-decoration: underline; }}
-    @media (prefers-color-scheme: dark) {{
-      body {{ background: #0d1117; color: #c9d1d9; }}
-      a {{ color: #58a6ff; }}
-    }}
-  </style>
-</head>
-<body>
-  {readme_html}
-</body>
-</html>"""
+    landing_html = viewer_template.render(
+        filename="README.md",
+        site_base_path=site_base_path,
+        content=rendered_readme,
+        breadcrumbs="",
+        ga_tracking_id=GA_ID,
+        download_link=None
+    )
 
     with open(OUTPUT_DIR / "index.html", "w", encoding="utf-8") as f:
         f.write(landing_html)
+
 else:
     with open(OUTPUT_DIR / "index.html", "w", encoding="utf-8") as f:
         f.write(index_template.render(
