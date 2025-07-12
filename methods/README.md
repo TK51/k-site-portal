@@ -1,7 +1,6 @@
 # K-Site Methods
 
-K-Site  
-**Folder Transformation Engine**  
+K-Site - **Folder Transformation Engine**  
 → Build once, deliver anywhere - for structured demos, docs, kits, and pitch folders.
 
 ---
