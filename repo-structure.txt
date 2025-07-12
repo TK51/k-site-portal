@@ -13,10 +13,11 @@ k-site-portal/
 │   │   ├── ks-03-core.md
 │   │   ├── ks-04-zip.md
 │   │   └── README.md                       # Optional intro to methods
-│   ├── portal-readme.md                    # If you want alt landing instead of root README
 │   └── made-by.md                          # Former MADE-BY.md, now as viewer page
 │
 ├── downloads/                              # All raw files (.zip, .exe, etc.)
+│   ├──
+│   ├──
 │   ├── KSite_CoreBuilder_Windows.zip
 │   └── KSite_ZipBuilder_Windows.zip
 │
