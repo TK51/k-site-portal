@@ -13,13 +13,13 @@ from markdown.extensions.extra import ExtraExtension
 
 # === PATHS ===
 BASE_DIR = Path(__file__).resolve().parent.parent
-METHODS_DIR = BASE_DIR / "methods"
+METHODS_DIR = BASE_DIR / "content" / "methods"
 DOWNLOADS_SRC = BASE_DIR / "downloads"
 CONFIG_FILE = BASE_DIR / "config" / "settings.yaml"
 TEMPLATE_DIR = BASE_DIR / "src" / "templates"
 OUTPUT_DIR = BASE_DIR / "docs"
 DOWNLOAD_DIR = OUTPUT_DIR / "download"
-CONTENT_DIR = METHODS_DIR  # patching the previous omission
+CONTENT_DIR = BASE_DIR / "content"
 
 # === LOAD CONFIG ===
 def load_config():
@@ -178,14 +178,8 @@ if methods_readme.exists():
 
     with open(OUTPUT_DIR / "methods" / "index.html", "w", encoding="utf-8") as f:
         f.write(rendered)
-
-downloads_readme = DOWNLOADS_SRC / "README.md"
-if downloads_readme.exists():
-    with open(downloads_readme, "r", encoding="utf-8") as f:
-        raw = f.read()
-        rendered = fix_links_in_readme(raw)
-
-    # === DOWNLOADS README PATCH
+        
+# === DOWNLOADS README PATCH
 downloads_readme = DOWNLOADS_SRC / "README.md"
 if downloads_readme.exists():
     with open(downloads_readme, "r", encoding="utf-8") as f:
