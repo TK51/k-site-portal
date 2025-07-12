@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Index — {{ folder }}</title>
+  <title>K-Site Portal – Landing</title>
 
   {% if ga_tracking_id %}
   <script async src="https://www.googletagmanager.com/gtag/js?id={{ ga_tracking_id }}"></script>
@@ -43,6 +42,7 @@
       cursor: pointer;
     }
     button:hover { background-color: #444; }
+    hr { margin: 2rem 0; }
     @media (prefers-color-scheme: dark) {
       body { background: #0d1117; color: #c9d1d9; }
       a { color: #58a6ff; }
@@ -53,34 +53,7 @@
 </head>
 <body>
 
-  <div style="margin-bottom: 2em;">
-    <a href="{{ site_base_path }}"><button>Home</button></a>
-    <button onclick="handleBack()">Back</button>
-  </div>
-
-  <h1>Index of {{ folder }}</h1>
-  <ul>
-    {% for file in files %}
-      <li><a href="{{ file }}">{{ file }}</a></li>
-    {% endfor %}
-  </ul>
-
-  <hr />
-
-  <div style="margin-top: 2em;">
-    <a href="{{ site_base_path }}"><button>Home</button></a>
-    <button onclick="handleBack()">Back</button>
-  </div>
-
-  <script>
-    function handleBack() {
-      if (history.length > 1) {
-        history.back();
-      } else {
-        window.location.href = "{{ site_base_path }}";
-      }
-    }
-  </script>
+  {{ readme_content | safe }}
 
 </body>
 </html>
