@@ -23,4 +23,4 @@ Each turns a structured folder into a usable static website.
 - YouTube: [K-Site Project Overview](https://youtu.be/Ff_-9Zq4IJY)  
 - YouTube: [K-Site Full Playlist](https://www.youtube.com/playlist?list=PLfhiL_52uLtW0uBeXyhtqSPhsqXGF-X_O)
 
-📎 Built by Kay - https://linkedin.com/in/taras-khamardiuk
+📎 Built by Kay [LinkedIn:Kay](https://linkedin.com/in/taras-khamardiuk)
