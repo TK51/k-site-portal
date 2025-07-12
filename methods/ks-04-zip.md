@@ -1,28 +1,47 @@
-# k-site-zip page
+# K-Site Zip
 
-K-Site Zip — Turn Any Folder Into a ZIP + Website in One Click
+K-Site Zip — **Turn Any Folder Into a Portable Website Package**  
+Auto-zipped, self-contained, no server required.
 
-[zip](https://youtu.be/-193h0AdSSU)
+---
 
-K-Site Zip is a desktop GUI app that lets you package any folder into a fully structured .zip — with a built-in static website inside.
+This mode lets you package any folder into a `.zip` file that includes a fully structured static website inside.  
+Perfect for demos, kits, pitch packs, or offline documentation delivery.
 
-🧱 Local folder → zipped HTML site
-🧰 GUI-driven — select, build, done
-📦 Perfect for sending pitch kits, doc bundles, or portable demos
+---
 
-🖥 This video: Walkthrough of the "Zip Builder" mode
-→ Generates index.html + index_static.html
-→ Outputs YourFolder_KSite.zip
-→ Built for DM/email delivery — no install needed, just an .exe download
+## Features
 
-🔧 More modes:  
-• Public → https://tk51.github.io/k-site-portal/methods/ks-01-public-viewer.html 
-• Private ZIP → https://tk51.github.io/k-site-portal/methods/ks-02-private-viewer.html  
-• Desktop Folder Viewer → https://tk51.github.io/k-site-portal/methods/ks-03-core-viewer.html  
-• Auto-Zip Builder → https://tk51.github.io/k-site-portal/methods/ks-04-zip-viewer.html
+- Auto-generates `index.html` and `index_static.html`  
+- Outputs a portable `YourFolder_KSite.zip` package  
+- GUI app — select folder, click build, done  
+- Designed for DM/email delivery — no setup required by receiver  
+- Available for Windows and Linux (see [Downloads](https://tk51.github.io/k-site-portal/downloads))
 
-📎 Built by Kay — https://linkedin.com/in/taras-khamardiuk
-#ksite
-#aiposbuilt
-#foldertransformationengine
-#fromukrainianswithlovetohumankind 🇺🇦
+---
+
+## Use Cases
+
+- Send a structured pitch kit that opens like a website  
+- Deliver bundled documentation with no external hosting  
+- Create portable teaching or onboarding kits  
+- Package tools and guides into a presentable ZIP
+
+---
+
+🎥 Zip Mode Walkthrough  
+- YouTube: [K-Site Zip Overview](https://youtu.be/-193h0AdSSU)
+
+---
+
+## Other Modes
+
+- [Public](https://tk51.github.io/k-site-portal/methods/ks-01-public-viewer.html) — View any GitHub folder as a website  
+- [Private ZIP](https://tk51.github.io/k-site-portal/methods/ks-02-private-viewer.html) — Share zipped folder, view offline  
+- [Core Desktop](https://tk51.github.io/k-site-portal/methods/ks-03-core-viewer.html) — Desktop app: folder → HTML site
+
+---
+
+📎 Built by Kay — https://linkedin.com/in/taras-khamardiuk  
+
+#ksite #aiposbuilt #foldertransformationengine #fromukrainianswithlovetohumankind 🇺🇦
