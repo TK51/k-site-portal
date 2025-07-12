@@ -1,3 +1,7 @@
+**[K-Site Portal Purpose]**  
+This portal turns folders into structured websites.  
+Designed for analysts, recruiters, and leads to browse tools, data, and logic — no install, no login.
+
 # K-Site Portal – Folder Transformation Engine
 
 **For recruiters:** this site shows how I structure, automate, and deliver working content systems - not demos, not slides - real outputs.  
