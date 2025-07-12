@@ -16,7 +16,7 @@ It runs directly on your machine — no internet, no install, no hosting.
 - Built-in GUI for simple folder selection  
 - Works offline — browse as if it were a real website  
 - No dependencies or configuration required  
-- Available for Windows and Linux (see [Downloads](https://tk51.github.io/k-site-portal/downloads))  
+- Available for Windows and Linux (see [Downloads](https://tk51.github.io/k-site-portal/download/index.html))  
 
 ---
 
