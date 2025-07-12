@@ -185,24 +185,33 @@ if downloads_readme.exists():
         raw = f.read()
         rendered = fix_links_in_readme(raw)
 
+    # === DOWNLOADS README PATCH
+downloads_readme = DOWNLOADS_SRC / "README.md"
+if downloads_readme.exists():
+    with open(downloads_readme, "r", encoding="utf-8") as f:
+        raw = f.read()
+        rendered = fix_links_in_readme(raw)
+
     downloads_index = OUTPUT_DIR / "download" / "index.html"
     with open(downloads_index, "w", encoding="utf-8") as f:
         f.write(rendered)
 
-    toc_block = generate_site_toc()
-    if " Site Contents" in readme_md:
-        readme_md = readme_md.replace(" Site Contents", f" Site Contents\n\n{toc_block}")
-    else:
-        readme_md += "\n\n" + toc_block
+# === ROOT README TOC PATCH
+if readme_path.exists():
+    with open(readme_path, "r", encoding="utf-8") as f:
+        readme_md = f.read()
 
-    # # === BUILD TOC ===
-    # toc_block = generate_site_toc()
-    
-    # # === MINIMAL INJECTION LOGIC ===
-    # if "## Site Contents" in readme_md:
-    #     readme_md = re.sub(r'## Site Contents.*?(?=\n##|\Z)', f'## Site Contents\n\n{toc_block}', readme_md, flags=re.DOTALL)
-    # else:
-    #     readme_md += "\n\n## Site Contents\n\n" + toc_block
+    toc_block = generate_site_toc()
+
+    if "<!-- auto-generated TOC" in readme_md:
+        readme_md = re.sub(
+            r'<!-- auto-generated TOC.*?-->',
+            f'<!-- auto-generated TOC -->\n\n{toc_block}',
+            readme_md,
+            flags=re.DOTALL
+        )
+    else:
+        readme_md += f"\n\n## Site Contents\n\n{toc_block}"
 
     readme_html = fix_links_in_readme(readme_md)
 
@@ -228,6 +237,16 @@ if downloads_readme.exists():
 
     with open(OUTPUT_DIR / "index.html", "w", encoding="utf-8") as f:
         f.write(landing_html)
+else:
+    with open(OUTPUT_DIR / "index.html", "w", encoding="utf-8") as f:
+        f.write(index_template.render(
+            folder="Root",
+            files=root_links,
+            site_base_path=site_base_path,
+        ))
+
+# === ZIP PACKAGE
+shutil.make_archive("docs", "zip", OUTPUT_DIR)
 else:
     with open(OUTPUT_DIR / "index.html", "w", encoding="utf-8") as f:
         f.write(index_template.render(
