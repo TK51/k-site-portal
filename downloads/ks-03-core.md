@@ -1,11 +1,18 @@
 # K-Site Core Viewer
 
-**Use:** Turn any local folder into a browsable offline website.  
-**Install:**  
-- [Windows ZIP](KSite_CoreBuilder_Windows.zip) → unzip, run `.exe`  
-- [Linux AppImage](KSite_CoreBuilder.AppImage) → mark executable, run
+**What for:**  
+Browse any local folder as a fully structured HTML site.  
+Use it to view projects, docs, or toolkits like a website — offline.
 
-🎥 [Watch how it works](https://youtu.be/29NjvdTVO-g)
+**How to install:**  
+1. Download:  
+   - [Windows ZIP](KSite_CoreBuilder_Windows.zip)  
+   - [Linux AppImage](KSite_CoreBuilder.AppImage)  
+2. Unpack (ZIP) or mark executable (Linux)  
+3. Run → Select folder → `index.html` and static index file will appear inside  
+4. Open in browser - double-click any of index files
+
+🎥 [See it in action](https://youtu.be/29NjvdTVO-g)
 
 —
 Built by Kay → [LinkedIn](https://linkedin.com/in/taras-khamardiuk)
