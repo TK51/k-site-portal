@@ -3,13 +3,12 @@
 K-Site is a folder transformation engine.  
 It renders any structured folder into a static, zero-login website - with portable viewers, download-ready modes, and traceable pages (when hosted online).
 
-📦 No login  
-🧱 No build system  
-🧰 No dependencies
+-- No login  
+-- No build system  
+-- No dependencies
 
 Just structure → site.  
-🧠 You bring the folder.  
-🛠 K-Site brings the structure.
+-- You bring the folder --> K-Site brings the structure.
 
 ---
 
