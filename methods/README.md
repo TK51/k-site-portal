@@ -13,10 +13,10 @@ Each turns a structured folder into a usable static website.
 
 ## 🧭 Modes
 
-- [Public Viewer](https://tk51.github.io/k-site-portal/methods/ks-01-public-viewer.html) - View any GitHub folder as a website   
-- [Private Viewer](https://tk51.github.io/k-site-portal/methods/ks-01-public-viewer.html) - Share zipped folder, view offline  
-- [Core Viewer](https://tk51.github.io/k-site-portal/methods/ks-01-public-viewer.html) - Desktop app: folder → HTML site  
-- [Zip Viewer](https://tk51.github.io/k-site-portal/methods/ks-01-public-viewer.html) - Auto-generate zipped website from folder
+- [Public](https://tk51.github.io/k-site-portal/methods/ks-01-public-viewer.html) - View any GitHub folder as a website   
+- [Private](https://tk51.github.io/k-site-portal/methods/ks-01-public-viewer.html) - Share zipped folder, view offline  
+- [Core Desktop](https://tk51.github.io/k-site-portal/methods/ks-01-public-viewer.html) - Desktop app: folder → HTML site  
+- [Zip Desktop](https://tk51.github.io/k-site-portal/methods/ks-01-public-viewer.html) - Auto-generate zipped website from folder
 
 ---
 
