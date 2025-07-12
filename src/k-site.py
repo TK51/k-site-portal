@@ -196,7 +196,7 @@ if downloads_readme.exists():
     with open(downloads_index, "w", encoding="utf-8") as f:
         f.write(rendered)
 
-## === ROOT README TOC PATCH
+# === ROOT README TOC PATCH
 readme_path = BASE_DIR / "README.md"
 if readme_path.exists():
     with open(readme_path, "r", encoding="utf-8") as f:
@@ -206,7 +206,7 @@ if readme_path.exists():
 
     if "<!-- auto-generated TOC" in readme_md:
         readme_md = re.sub(
-            r'<!-- auto-generated TOC.*?\(Will list.*?\)\s*',
+            r'<!-- auto-generated TOC.*?\(Will list.*?\)\s*---*',
             f'<!-- auto-generated TOC -->\n\n{toc_block}\n\n',
             readme_md,
             flags=re.DOTALL
