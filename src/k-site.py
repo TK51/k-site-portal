@@ -78,16 +78,25 @@ for file in DOWNLOADS_SRC.iterdir():
     if file.suffix.lower() in [".zip", ".exe", ".appimage"]:
         shutil.copy2(file, DOWNLOAD_DIR / file.name)
 
-# === DOWNLOADS README PATCH (REQUIRED TO RENDER download/index.html)
+# === DOWNLOADS README PATCH
 downloads_readme = DOWNLOADS_SRC / "README.md"
 if downloads_readme.exists():
     with open(downloads_readme, "r", encoding="utf-8") as f:
         raw = f.read()
-        rendered = fix_links_in_readme(raw)
+        content_html = fix_links_in_readme(raw)
+
+    html = viewer_template.render(
+        filename="README.md",
+        site_base_path=site_base_path,
+        content=content_html,
+        breadcrumbs="downloads",
+        ga_tracking_id=GA_ID,
+        download_link=None
+    )
 
     downloads_index = DOWNLOAD_DIR / "index.html"
     with open(downloads_index, "w", encoding="utf-8") as f:
-        f.write(rendered)
+        f.write(html)
 
 # === FILE PIPELINE ===
 for root, _, files in os.walk(CONTENT_DIR):
