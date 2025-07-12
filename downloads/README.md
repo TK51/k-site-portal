@@ -10,18 +10,11 @@ You might need to permit the app run in you system of choice.
 Browse any local folder as a structured HTML site.
 
 - [Windows ZIP](KSite_CoreBuilder_Windows.zip)  
-- [Linux AppImage](KSite_CoreBuilder_Linux.AppImage)
-
----
+- [Linux AppImage](KSite_CoreBuilder.AppImage)  
 
 ## ZIP Builder  
 Turn any folder into a self-contained website inside a `.zip`.
 
 - [Windows ZIP](KSite_ZipBuilder_Windows.zip)  
-- [Linux AppImage](KSite_ZipBuilder_Linux.AppImage)
+- [Linux AppImage](KSite_ZipBuilder.AppImage)
 
----
-
----
-
-← [Back to K-Site Portal](../index.html)
