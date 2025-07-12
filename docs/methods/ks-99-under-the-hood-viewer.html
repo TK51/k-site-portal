@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ks-99-under-the-hood.md — K-Site Viewer</title>
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MGQVC84LK++D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-MGQVC84LK++D');
+  </script>
+  
+
+  <style>
+    :root { color-scheme: light dark; }
+    body {
+      font-family: system-ui, sans-serif;
+      background-color: #ffffff;
+      color: #000000;
+      padding: 2rem;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      background: #f4f4f4;
+      padding: 1em;
+      border-radius: 5px;
+      overflow-x: auto;
+      border: 1px solid #ccc;
+    }
+    h1 {
+      font-size: 1.5rem;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 0.3rem;
+    }
+    .nav-button, .download-button {
+      display: inline-block;
+      margin: 1rem 0.5rem;
+      padding: 0.5rem 1rem;
+      background-color: #e0e0e0;
+      color: #111;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 0.95rem;
+    }
+    .nav-button:hover, .download-button:hover {
+      background-color: #c0c0c0;
+    }
+    .footer {
+      margin-top: 2rem;
+      font-size: 0.85rem;
+      color: #666;
+      border-top: 1px solid #ccc;
+      padding-top: 0.5rem;
+    }
+    @media (prefers-color-scheme: dark) {
+      body { background-color: #0d1117; color: #c9d1d9; }
+      pre { background-color: #161b22; border: 1px solid #30363d; }
+      .nav-button, .download-button {
+        background-color: #21262d; color: #c9d1d9;
+      }
+      .nav-button:hover, .download-button:hover {
+        background-color: #30363d;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div>
+    <a class="nav-button" href="/k-site-portal/">Home</a>
+    <a class="nav-button" href="javascript:handleBack()">Back</a>
+  </div>
+
+  <h1>ks-99-under-the-hood.md</h1>
+
+  <div class="breadcrumbs">methods</div>
+  <div class="content"><h1 id="whats-under-the-hood">What's under the hood?</h1>
+<p>K-Site is a zero-GUI transformation engine that converts any folder into a static, navigable HTML site.</p>
+<p>No servers. No frameworks. No runtime dependency chain.</p>
+<hr />
+<h2 id="core-process">🔧 Core Process</h2>
+<ul>
+<li><strong>Python 3.10+</strong></li>
+<li><strong>Libraries used</strong>:</li>
+<li><code>jinja2</code> → HTML rendering from templates</li>
+<li><code>markdown</code>, <code>toc</code>, <code>extra</code> → for .md content + TOC logic</li>
+<li><code>yaml</code> → configuration rules (render extensions, output paths)</li>
+<li><code>csv</code>, <code>json</code>, <code>io</code> → structured content parsing</li>
+<li><code>pathlib</code>, <code>os</code>, <code>shutil</code> → folder traversal, file ops</li>
+<li><code>re</code> → content rewrites (autolink TOCs, viewer redirects)</li>
+</ul>
+<hr />
+<h2 id="execution-flow">🧱 Execution Flow</h2>
+<ol>
+<li>
+<p><strong>Folder scan</strong><br />
+   Each subfolder is walked recursively. Logic skips ignored folders by YAML config.</p>
+</li>
+<li>
+<p><strong>Content classification</strong>  </p>
+</li>
+<li><code>.md</code>, <code>.txt</code>, <code>.csv</code>, <code>.json</code>, <code>.py</code> → rendered with <code>viewer.html</code>  </li>
+<li>Images → copied directly  </li>
+<li>
+<p>Other files → either skipped or zipped (configurable)</p>
+</li>
+<li>
+<p><strong>Viewer generation</strong><br />
+   Rendered HTML is injected with a <code>viewer.html</code> template, embedding content and safe download links.</p>
+</li>
+<li>
+<p><strong>Subfolder <code>index.html</code> build</strong><br />
+   Each folder gets its own index with file links, built from the list of generated items.</p>
+</li>
+<li>
+<p><strong>Root <code>index.html</code> (landing)</strong><br />
+   Generated from <code>README.md</code> with markdown-to-HTML conversion. Injected into a stripped landing template.</p>
+</li>
+<li>
+<p><strong>Static variant (<code>index_static.html</code>)</strong><br />
+   Optionally generated as a no-script fallback using the same file map, minus JS logic.</p>
+</li>
+<li>
+<p><strong>Packaging</strong><br />
+   Entire <code>docs/</code> is zipped into a standalone site bundle.</p>
+</li>
+</ol>
+<hr />
+<p>K-Site is meant to ship offline.<br />
+No runtime, no build chain, no NPM, no Docker, no bullshit.</p>
+<p>Just Python + Jinja + a structured mind.</p>
+<p>-- <a href="https://linkedin.com/in/taras-khamardiuk">Kay</a>  </p>
+<pre><code>`#ksite #aiposbuilt #foldertransformationengine #fromukrainianswithlovetohumankind 🇺🇦`
+</code></pre></div>
+
+  
+  <a class="download-button" href="../download/ks-99-under-the-hood.md">Download Raw File</a>
+  
+
+  <div style="margin-top: 2em;">
+    <a class="nav-button" href="/k-site-portal/">Home</a>
+    <a class="nav-button" href="javascript:handleBack()">Back</a>
+  </div>
+
+  <div class="footer">
+    Built with KaySite — a zero-GUI, automation-first static site generator.<br>
+    Path: methods
+  </div>
+
+  <script>
+    function handleBack() {
+      if (history.length > 1) {
+        history.back();
+      } else {
+        window.location.href = "/k-site-portal/";
+      }
+    }
+  </script>
+
+</body>
+</html>
