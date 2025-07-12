@@ -1,6 +1,6 @@
 # === K-Site Configuration ===
 
-ga_tracking_id: G-MGQVC84LK++D        # Replace with your GA4 ID or leave blank/null to disable
+ga_tracking_id: G-MGQVC84LKD        # Replace with your GA4 ID or leave blank/null to disable
 site_base_path: "/k-site-portal/"      # <- 🔧 REQUIRED for correct Home/Back links in GitHub Pages
 
 rules:
