@@ -20,7 +20,7 @@ Each turns a structured folder into a usable static website.
 ---
 
 🎥 Introductory walkthrough of all 4 modes:  
-[YouTube: K-Site  Folder Transformation Engine](https://youtu.be/Ff_-9Zq4IJY)
+[YouTube: K-Site  Folder Transformation Engine](https://youtu.be/Ff_-9Zq4IJY)  
 [Full K-Site Playlist}(https://www.youtube.com/playlist?list=PLfhiL_52uLtW0uBeXyhtqSPhsqXGF-X_O)
 
 📎 Built by Kay - https://linkedin.com/in/taras-khamardiuk
