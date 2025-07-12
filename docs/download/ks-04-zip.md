@@ -44,4 +44,4 @@ Perfect for demos, kits, pitch packs, or offline documentation delivery.
 
 📎 Built by Kay — https://linkedin.com/in/taras-khamardiuk  
 
-#ksite #aiposbuilt #foldertransformationengine #fromukrainianswithlovetohumankind 🇺🇦
+`#ksite #aiposbuilt #foldertransformationengine #fromukrainianswithlovetohumankind 🇺🇦`

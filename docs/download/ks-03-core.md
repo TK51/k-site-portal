@@ -44,4 +44,4 @@ It runs directly on your machine — no internet, no install, no hosting.
 
 📎 Built by Kay — https://linkedin.com/in/taras-khamardiuk  
 
-#ksite #aiposbuilt #foldertransformationengine #fromukrainianswithlovetohumankind 🇺🇦
+`#ksite #aiposbuilt #foldertransformationengine #fromukrainianswithlovetohumankind 🇺🇦`
