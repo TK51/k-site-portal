@@ -7,8 +7,7 @@ It renders any structured folder into a static, zero-login website - with portab
 🧱 No build system  
 🧰 No dependencies
 
-Just structure → site. 
-
+Just structure → site.  
 🧠 You bring the folder.  
 🛠 K-Site brings the structure.
 
