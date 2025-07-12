@@ -13,6 +13,6 @@ Use it to view projects, docs, or toolkits like a website - offline.
 4. Open in browser  - double-click `index.html` or `index-static.html` inside
 
 **🎥 See it in action:**  
-- YouTube: [K-Site Core Overview](https://youtu.be/29NjvdTVO-g)
+- YouTube: [K-Site Core Overview](https://youtu.be/29NjvdTVO-g)  
 
 -- Built by Kay → [LinkedIn](https://linkedin.com/in/taras-khamardiuk)
