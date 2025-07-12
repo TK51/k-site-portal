@@ -13,11 +13,13 @@ from markdown.extensions.extra import ExtraExtension
 
 # === PATHS ===
 BASE_DIR = Path(__file__).resolve().parent.parent
-CONTENT_DIR = BASE_DIR / "content"
+METHODS_DIR = BASE_DIR / "methods"
+DOWNLOADS_SRC = BASE_DIR / "downloads"
 CONFIG_FILE = BASE_DIR / "config" / "settings.yaml"
 TEMPLATE_DIR = BASE_DIR / "src" / "templates"
 OUTPUT_DIR = BASE_DIR / "docs"
 DOWNLOAD_DIR = OUTPUT_DIR / "download"
+CONTENT_DIR = METHODS_DIR  # patching the previous omission
 
 # === LOAD CONFIG ===
 def load_config():
@@ -81,6 +83,11 @@ if OUTPUT_DIR.exists():
 OUTPUT_DIR.mkdir(parents=True)
 DOWNLOAD_DIR.mkdir(parents=True)
 
+# === COPY DOWNLOAD FILES FROM /downloads TO /docs/download/
+for file in DOWNLOADS_SRC.iterdir():
+    if file.suffix.lower() in [".zip", ".exe", ".appimage"]:
+        shutil.copy2(file, DOWNLOAD_DIR / file.name)
+
 # === FILE PIPELINE ===
 for root, _, files in os.walk(CONTENT_DIR):
     rel_root = Path(root).relative_to(CONTENT_DIR)
@@ -102,7 +109,7 @@ for root, _, files in os.walk(CONTENT_DIR):
                 raw = f.read()
 
             if ext == ".md":
-                body = markdown.markdown(raw)
+                body = markdown.markdown(raw, extensions=["fenced_code", "tables", TocExtension(), ExtraExtension()])
             elif ext == ".json":
                 try:
                     parsed = json.loads(raw)
@@ -169,6 +176,16 @@ readme_path = BASE_DIR / "README.md"
 if readme_path.exists():
     with open(readme_path, "r", encoding="utf-8") as f:
         readme_md = f.read()
+
+downloads_readme = DOWNLOADS_SRC / "README.md"
+if downloads_readme.exists():
+    with open(downloads_readme, "r", encoding="utf-8") as f:
+        raw = f.read()
+        rendered = fix_links_in_readme(raw)
+
+    downloads_index = OUTPUT_DIR / "download" / "index.html"
+    with open(downloads_index, "w", encoding="utf-8") as f:
+        f.write(rendered)
 
     toc_block = generate_site_toc()
     if "📑 Site Contents" in readme_md:
