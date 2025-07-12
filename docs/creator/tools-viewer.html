@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>tools.md — K-Site Viewer</title>
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MGQVC84LK++D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-MGQVC84LK++D');
+  </script>
+  
+
+  <style>
+    :root { color-scheme: light dark; }
+    body {
+      font-family: system-ui, sans-serif;
+      background-color: #ffffff;
+      color: #000000;
+      padding: 2rem;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      background: #f4f4f4;
+      padding: 1em;
+      border-radius: 5px;
+      overflow-x: auto;
+      border: 1px solid #ccc;
+    }
+    h1 {
+      font-size: 1.5rem;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 0.3rem;
+    }
+    .nav-button, .download-button {
+      display: inline-block;
+      margin: 1rem 0.5rem;
+      padding: 0.5rem 1rem;
+      background-color: #e0e0e0;
+      color: #111;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 0.95rem;
+    }
+    .nav-button:hover, .download-button:hover {
+      background-color: #c0c0c0;
+    }
+    .footer {
+      margin-top: 2rem;
+      font-size: 0.85rem;
+      color: #666;
+      border-top: 1px solid #ccc;
+      padding-top: 0.5rem;
+    }
+    @media (prefers-color-scheme: dark) {
+      body { background-color: #0d1117; color: #c9d1d9; }
+      pre { background-color: #161b22; border: 1px solid #30363d; }
+      .nav-button, .download-button {
+        background-color: #21262d; color: #c9d1d9;
+      }
+      .nav-button:hover, .download-button:hover {
+        background-color: #30363d;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div>
+    <a class="nav-button" href="/k-site-portal/">Home</a>
+    <a class="nav-button" href="javascript:handleBack()">Back</a>
+  </div>
+
+  <h1>tools.md</h1>
+
+  <div class="breadcrumbs">creator</div>
+  <div class="content"><h1 id="tools-behind-k-site">Tools Behind K-Site</h1>
+<p>These micro-tools were the starting point of the K-Site logic engine.<br />
+Built to reduce friction in local content handling and test how logic renders into repeatable output.</p>
+<hr />
+<h2 id="available-tools">🧰 Available Tools</h2>
+<p><strong>1. Folder Tree Scanner</strong><br />
+Render a folder's structure into clean tree-view format.<br />
+→ <a href="https://tk51.github.io/aipos-public-eng/tools/tools-01-folder_tree_scan-py-viewer.html">tools-01-folder_tree_scan</a></p>
+<p><strong>2. Markdown/TXT to DOCX Converter</strong><br />
+Batch convert <code>.md</code> or <code>.txt</code> files into Word <code>.docx</code>.<br />
+→ <a href="https://tk51.github.io/aipos-public-eng/tools/tools-02-convert_all_md-txt_to_docx-py-viewer.html">tools-02-convert_all_md_to_docx</a></p>
+<p><strong>3. DOCX to PDF Converter</strong><br />
+Take exported <code>.docx</code> files and convert them to <code>.pdf</code>.<br />
+→ <a href="https://tk51.github.io/aipos-public-eng/tools/tools-03-convert_docx_to_pdf-py-viewer.html">tools-03-convert_docx_to_pdf</a></p>
+<hr />
+<p>Full tool folder:<br />
+→ <a href="https://tk51.github.io/aipos-public-eng/tools/index.html">AIPOS Tools Index</a></p>
+<p>These utilities shaped the early pipeline logic of K-Site — before viewers, before ZIPs.<br />
+They live on in the AIPOS logic system.</p>
+<p>—
+Built by Kay — <a href="https://linkedin.com/in/taras-khamardiuk">LinkedIn</a></p></div>
+
+  
+  <a class="download-button" href="../download/tools.md">Download Raw File</a>
+  
+
+  <div style="margin-top: 2em;">
+    <a class="nav-button" href="/k-site-portal/">Home</a>
+    <a class="nav-button" href="javascript:handleBack()">Back</a>
+  </div>
+
+  <div class="footer">
+    Built with KaySite — a zero-GUI, automation-first static site generator.<br>
+    Path: creator
+  </div>
+
+  <script>
+    function handleBack() {
+      if (history.length > 1) {
+        history.back();
+      } else {
+        window.location.href = "/k-site-portal/";
+      }
+    }
+  </script>
+
+</body>
+</html>
