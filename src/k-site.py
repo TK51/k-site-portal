@@ -189,20 +189,20 @@ if downloads_readme.exists():
     with open(downloads_index, "w", encoding="utf-8") as f:
         f.write(rendered)
 
-    # toc_block = generate_site_toc()
-    # if "📑 Site Contents" in readme_md:
-    #     readme_md = readme_md.replace("📑 Site Contents", f"📑 Site Contents\n\n{toc_block}")
-    # else:
-    #     readme_md += "\n\n" + toc_block
-
-    # === BUILD TOC ===
     toc_block = generate_site_toc()
-    
-    # === MINIMAL INJECTION LOGIC ===
-    if "## Site Contents" in readme_md:
-        readme_md = re.sub(r'## Site Contents.*?(?=\n##|\Z)', f'## Site Contents\n\n{toc_block}', readme_md, flags=re.DOTALL)
+    if " Site Contents" in readme_md:
+        readme_md = readme_md.replace(" Site Contents", f" Site Contents\n\n{toc_block}")
     else:
-        readme_md += "\n\n## Site Contents\n\n" + toc_block
+        readme_md += "\n\n" + toc_block
+
+    # # === BUILD TOC ===
+    # toc_block = generate_site_toc()
+    
+    # # === MINIMAL INJECTION LOGIC ===
+    # if "## Site Contents" in readme_md:
+    #     readme_md = re.sub(r'## Site Contents.*?(?=\n##|\Z)', f'## Site Contents\n\n{toc_block}', readme_md, flags=re.DOTALL)
+    # else:
+    #     readme_md += "\n\n## Site Contents\n\n" + toc_block
 
     readme_html = fix_links_in_readme(readme_md)
 
