@@ -6,39 +6,21 @@ K-Site
 
 ---
 
-This section walks through all four delivery modes —  
-each built to turn your folder into a usable, zero-login website.
+This folder explains all 4 modes of using K-Site:  
+Each turns a structured folder into a usable static website.
 
 ---
 
-## 🔍 Available Modes
+## 🧭 Modes
 
-- **[ks-01-public](ks-01-public-viewer.html)**  
-  → Turn any GitHub folder into a browsable site. No backend, no build.
-
-- **[ks-02-private](ks-02-private-viewer.html)**  
-  → Share a zipped folder. Open `index.html` → explore offline.
-
-- **[ks-03-core](ks-03-core-viewer.html)**  
-  → Desktop app. Drag any folder → get instant HTML viewer inside it.
-
-- **[ks-04-zip](ks-04-zip-viewer.html)**  
-  → Auto-generate a zipped HTML website from any folder.
+- `ks-01-public.md` — View any GitHub folder as a website  
+- `ks-02-private.md` — Share zipped folder, view offline  
+- `ks-03-core.md` — Desktop app: folder → HTML site  
+- `ks-04-zip.md` — Auto-generate zipped website from folder
 
 ---
 
-## 🧾 What This Is
+🎥 Full walkthrough of all 4 modes:  
+https://youtube.com/watch?v=YOUR_VIDEO_ID_HERE
 
-K-Site is a no-login, folder-to-site engine.  
-Built for structured demos, docs, kits, and pitch folders.  
-No server. No build tools. No user friction.
-
-🌐 Live Portal → [tk51.github.io/k-site-portal](https://tk51.github.io/k-site-portal/)  
-📎 Built by Kay — [linkedin.com/in/taras-khamardiuk](https://linkedin.com/in/taras-khamardiuk)
-
----
-
-#ksite  
-#aiposbuilt  
-#foldertransformationengine  
-#fromukrainianswithlovetohumankind 🇺🇦
+📎 Built by Kay — https://linkedin.com/in/taras-khamardiuk
