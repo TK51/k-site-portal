@@ -1,5 +1,7 @@
 # K-Site Zip
 
+For DM delivery: send ZIP, they unzip, open index.html — see structured viewer of your logic/tools.  
+
 K-Site Zip — **Turn Any Folder Into a Portable Website Package**  
 Auto-zipped, self-contained, no server required.
 
