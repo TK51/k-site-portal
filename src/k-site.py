@@ -205,7 +205,7 @@ if readme_path.exists():
 
     if "<!-- auto-generated TOC" in readme_md:
         readme_md = re.sub(
-            r'<!-- auto-generated TOC.*?-->',
+            r'<!-- auto-generated TOC.*?\(Will list.*?\)\s*',
             f'<!-- auto-generated TOC -->\n\n{toc_block}',
             readme_md,
             flags=re.DOTALL
