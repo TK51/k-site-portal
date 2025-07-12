@@ -2,6 +2,7 @@
 
 All binaries built for direct use — no install required.  
 Just unzip and run `.AppImage` or `.exe` inside.
+You might have a need to permit the app run in you system.
 
 ---
 
