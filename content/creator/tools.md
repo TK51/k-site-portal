@@ -5,7 +5,7 @@ Built to reduce friction in local content handling and test how logic renders in
 
 ---
 
-## 🧰 Available Tools
+## Available Tools
 
 **1. Folder Tree Scanner**  
 Render a folder's structure into clean tree-view format.  
