@@ -9,14 +9,14 @@ You might need to permit the app run in you system of choice.
 ## Core Viewer  
 Browse any local folder as a structured HTML site - indexed snapshot of **folder** content.
 
-- [KSite_Core_Windows ZIP](KSite_CoreBuilder_Windows.zip)  
-- [KSite_Core_Linux AppImage](KSite_CoreBuilder.AppImage)  
+- [KSite_Core_Windows ZIP](KSite_CoreBuilder_Windows.zip)  -- click to download
+- [KSite_Core_Linux AppImage](KSite_CoreBuilder.AppImage)  -- click to download
 
 ## ZIP Builder  
 Turn any folder into a self-contained website inside a `.zip` - indexed snapshot of **zipped** content.
 
-- [KSite_Zip_Windows ZIP](KSite_ZipBuilder_Windows.zip)  
-- [KSite_Zip_Linux AppImage](KSite_ZipBuilder.AppImage)
+- [KSite_Zip_Windows ZIP](KSite_ZipBuilder_Windows.zip)    -- click to download
+- [KSite_Zip_Linux AppImage](KSite_ZipBuilder.AppImage)    -- click to download
 
 ---
 
