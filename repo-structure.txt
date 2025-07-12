@@ -16,9 +16,9 @@ k-site-portal/
 │   └── made-by.md                          # Former MADE-BY.md, now as viewer page
 │
 ├── downloads/                              # All raw files (.zip, .exe, etc.)
-│   ├──
-│   ├──
+│   ├── KSite_CoreBuilder.AppImage
 │   ├── KSite_CoreBuilder_Windows.zip
+│   ├── KSite_ZipBuilder.AppImage
 │   └── KSite_ZipBuilder_Windows.zip
 │
 ├── templates/
