@@ -43,4 +43,4 @@ containing a static HTML site — ready for offline use, with no server or insta
 
 📎 Built by Kay — https://linkedin.com/in/taras-khamardiuk  
 
-#ksite #aiposbuilt #foldertransformationengine #fromukrainianswithlovetohumankind 🇺🇦
+`#ksite #aiposbuilt #foldertransformationengine #fromukrainianswithlovetohumankind 🇺🇦`
