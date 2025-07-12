@@ -16,7 +16,7 @@ Perfect for demos, kits, pitch packs, or offline documentation delivery.
 - Outputs a portable `YourFolder_KSite.zip` package  
 - GUI app — select folder, click build, done  
 - Designed for DM/email delivery — no setup required by receiver  
-- Available for Windows and Linux (see [Downloads](https://tk51.github.io/k-site-portal/downloads))
+- Available for Windows and Linux (see [Downloads](https://tk51.github.io/k-site-portal/download/index.html))  
 
 ---
 
