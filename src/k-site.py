@@ -170,7 +170,7 @@ for root, _, files in os.walk(CONTENT_DIR):
     if index_files:
         index_html = index_template.render(
             folder=str(rel_root),
-            files=index_files,
+            files=sorted(index_files),
             site_base_path=site_base_path
         )
         with open(target_folder / "index.html", "w", encoding="utf-8") as f:
