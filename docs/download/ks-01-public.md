@@ -1,5 +1,7 @@
 # K-Site Public
 
+Use this mode to showcase resume, tools, or project files via public GitHub.  
+
 K-Site Public — **Turn Any Folder Into a Website**  
 No backend. No build tools. No login.
 
