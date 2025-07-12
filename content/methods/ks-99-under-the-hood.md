@@ -6,7 +6,7 @@ No servers. No frameworks. No runtime dependency chain.
 
 ---
 
-## 🔧 Core Process
+## Core Process
 
 - **Python 3.10+**
 - **Libraries used**:
@@ -19,7 +19,7 @@ No servers. No frameworks. No runtime dependency chain.
 
 ---
 
-## 🧱 Execution Flow
+## Execution Flow
 
 1. **Folder scan**  
    Each subfolder is walked recursively. Logic skips ignored folders by YAML config.
