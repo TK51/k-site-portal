@@ -56,7 +56,7 @@ def fix_links_in_readme(md: str) -> str:
 
 # === BUILD TOC FROM OUTPUT DIR ===
 def generate_site_toc():
-    toc_lines = ["## Site Contents", ""]
+    toc_lines = []
     for item in sorted(OUTPUT_DIR.iterdir()):
         if item.is_dir() and (item / "index.html").exists():
             toc_lines.append(f"- 📁 [{item.name}]({item.name}/index.html)")
