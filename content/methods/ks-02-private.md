@@ -1,5 +1,7 @@
 # K-Site Private
 
+Use this ZIP mode to send a frictionless viewer to contacts. No install, no login.  
+
 K-Site Private — **View Any Folder as a Website, Offline**  
 Turn any private repo into a browsable offline website.
 
