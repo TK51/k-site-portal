@@ -6,6 +6,8 @@
 
 **For non-tech users:** this is not a product. It’s a method. You upload a folder → it becomes a simple, clickable site - no login, no install, no noise.
 
+**For technical readers:** want to see how it works? [Go under the hood →](https://tk51.github.io/k-site-portal/methods/ks-99-under-the-hood-viewer.html)
+
 ---
 
 ## What is this?
