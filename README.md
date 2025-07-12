@@ -1,4 +1,5 @@
 **[K-Site Portal Purpose]**  
+
 This portal turns folders into structured websites.  
 Designed for analysts, recruiters, and leads to browse tools, data, and logic — no install, no login.
 
