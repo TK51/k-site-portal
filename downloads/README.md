@@ -1,20 +1,26 @@
 # K-Site Downloads
 
-All binaries built for direct use — no install required.  
-Just unzip and run `.AppImage` or `.exe` inside.  
-You might have a need to permit the app run in you system of choice.
+K-Site apps built for direct use and run without install.  
+Just unzip and launch the `.exe` (Windows) or `.AppImage` (Linux). 
+You might need to permit the app run in you system of choice.
 
 ---
 
-## Core Viewer (browse local folders)
+## Core Viewer  
+Browse any local folder as a structured HTML site.
 
 - [Windows ZIP](KSite_CoreBuilder_Windows.zip)  
-- [Linux ZIP](KSite_CoreBuilder_Linux.zip)
+- [Linux AppImage](KSite_CoreBuilder_Linux.AppImage)
 
-## Zip Builder (auto-package folder into ZIP site)
+---
+
+## ZIP Builder  
+Turn any folder into a self-contained website inside a `.zip`.
 
 - [Windows ZIP](KSite_ZipBuilder_Windows.zip)  
-- [Linux ZIP](KSite_ZipBuilder_Linux.zip)
+- [Linux AppImage](KSite_ZipBuilder_Linux.AppImage)
+
+---
 
 ---
 
