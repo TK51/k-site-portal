@@ -180,56 +180,38 @@ for root, _, files in os.walk(CONTENT_DIR):
             f.write(index_html)
 
 # === ROOT INDEX OR LANDING PAGE
-root_links = []
-for sub in OUTPUT_DIR.iterdir():
-    if sub.is_dir() and (sub / "index.html").exists():
-        root_links.append(f"{sub.name}/index.html")
-
 readme_path = BASE_DIR / "README.md"
 if readme_path.exists():
     with open(readme_path, "r", encoding="utf-8") as f:
         readme_md = f.read()
 
     toc_block = generate_site_toc()
-
-    # Replace placeholder block (including optional --- after it)
     readme_md = re.sub(
-    r'<!-- auto-generated TOC -->',
-    f'<!-- auto-generated TOC -->\n\n{toc_block}\n',
-    readme_md
-)
-
+        r'<!-- auto-generated TOC -->',
+        f'<!-- auto-generated TOC -->\n\n{toc_block}\n',
+        readme_md
+    )
     readme_html = fix_links_in_readme(readme_md)
 
-    landing_html = f"""<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>GitSite Landing</title>
-  <style>
-    body {{ font-family: system-ui, sans-serif; margin: 2rem; background: #fff; color: #000; }}
-    a {{ color: #1a73e8; text-decoration: none; }}
-    a:hover {{ text-decoration: underline; }}
-    @media (prefers-color-scheme: dark) {{
-      body {{ background: #0d1117; color: #c9d1d9; }}
-      a {{ color: #58a6ff; }}
-    }}
-  </style>
-</head>
-<body>
-  {readme_html}
-</body>
-</html>"""
+    landing_template = env.get_template("landing.html")
+    landing_html = landing_template.render(
+        readme_content=readme_html,
+        ga_tracking_id=GA_ID,
+        site_base_path=site_base_path
+    )
 
     with open(OUTPUT_DIR / "index.html", "w", encoding="utf-8") as f:
         f.write(landing_html)
+
 else:
+    index_html = index_template.render(
+        folder="Root",
+        files=root_links,
+        site_base_path=site_base_path,
+        ga_tracking_id=GA_ID
+    )
     with open(OUTPUT_DIR / "index.html", "w", encoding="utf-8") as f:
-        f.write(index_template.render(
-            folder="Root",
-            files=root_links,
-            site_base_path=site_base_path,
-        ))
+        f.write(index_html)
 
 # === ZIP PACKAGE
 shutil.make_archive("docs", "zip", OUTPUT_DIR)
