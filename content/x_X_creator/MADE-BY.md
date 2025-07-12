@@ -1,4 +1,4 @@
-# K-Site – Made By x_X
+# K-Site – Made By
 
 This system wasn’t outsourced.  
 It was designed, built, tested, and documented by one person —  
@@ -6,7 +6,7 @@ not as a portfolio, but as a functional response to real delivery gaps.
 
 ---
 
-## Builder Profile
+## x_X Builder Profile
 
 **Name:** Kay (aka Taras Khamardiuk)  
 **Role:** Business Data Analyst / Reporting Automation Analyst  
@@ -16,7 +16,7 @@ not as a portfolio, but as a functional response to real delivery gaps.
 
 ---
 
-## Why K-Site Exists
+## x_X Why K-Site Exists
 
 Because zipped folders and email PDFs are lazy defaults.  
 Because structured delivery is undervalued.  
@@ -28,7 +28,7 @@ readable by humans, crawlable by systems.
 
 ---
 
-## What I Actually Did
+## x_X What I Actually Did
 
 - Designed the system logic (3 delivery modes + 1 portal site)  
 - Built all engines: core viewer, zip-packager, dual desktop apps  
@@ -40,7 +40,7 @@ readable by humans, crawlable by systems.
 
 ---
 
-## What It Represents
+## x_X What It Represents
 
 Not a product. Not a startup.  
 A logic artifact. A signal. 
@@ -52,7 +52,7 @@ This is how I work:
 
 ---
 
-📎 Contact:  
+📎 x_X Contact:  
 [LinkedIn](https://linkedin.com/in/taras-khamardiuk)  
 [GitHub](https://github.com/TK51)
 
