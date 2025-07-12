@@ -15,5 +15,4 @@ Use it to view projects, docs, or toolkits like a website - offline.
 **🎥 See it in action:**  
 - YouTube: [K-Site Core Overview](https://youtu.be/29NjvdTVO-g)
 
-—
-Built by Kay → [LinkedIn](https://linkedin.com/in/taras-khamardiuk)
+-- Built by Kay → [LinkedIn](https://linkedin.com/in/taras-khamardiuk)
