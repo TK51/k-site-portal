@@ -15,5 +15,7 @@ Use it to share offline toolkits, docs, or deliverables - just unzip and view.
 **🎥 See it in action:**  
 - YouTube: [K-Site Project Overview](https://youtu.be/Ff_-9Zq4IJY)
 
-—
+---
+
+--
 Built by Kay → [LinkedIn](https://linkedin.com/in/taras-khamardiuk)
