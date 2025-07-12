@@ -167,61 +167,39 @@ if readme_path.exists():
     with open(readme_path, "r", encoding="utf-8") as f:
         readme_md = f.read()
 
-methods_readme = METHODS_DIR / "README.md"
-if methods_readme.exists():
-    with open(methods_readme, "r", encoding="utf-8") as f:
-        raw = f.read()
-        rendered = fix_links_in_readme(raw)
-
-    # Ensure the target folder exists before writing
-    (OUTPUT_DIR / "methods").mkdir(parents=True, exist_ok=True)
-
-    with open(OUTPUT_DIR / "methods" / "index.html", "w", encoding="utf-8") as f:
-        f.write(rendered)
-        
-# === DOWNLOADS README PATCH
-downloads_readme = DOWNLOADS_SRC / "README.md"
-if downloads_readme.exists():
-    with open(downloads_readme, "r", encoding="utf-8") as f:
-        raw = f.read()
-        rendered = fix_links_in_readme(raw)
-
-    downloads_index = OUTPUT_DIR / "download" / "index.html"
-    with open(downloads_index, "w", encoding="utf-8") as f:
-        f.write(rendered)
-
-# === ROOT README TOC PATCH
-readme_path = BASE_DIR / "README.md"
-if readme_path.exists():
-    with open(readme_path, "r", encoding="utf-8") as f:
-        readme_md = f.read()
-
     toc_block = generate_site_toc()
 
-    if "<!-- auto-generated TOC" in readme_md:
-        readme_md = re.sub(
-            r'<!-- auto-generated TOC.*?\(Will list.*?\)\s*---*',
-            f'<!-- auto-generated TOC -->\n\n{toc_block}\n\n',
-            readme_md,
-            flags=re.DOTALL
-        )
-    else:
-        readme_md += f"\n\n## Site Contents\n\n{toc_block}"
+    # Replace placeholder block (including optional --- after it)
+    readme_md = re.sub(
+    r'<!-- auto-generated TOC -->',
+    f'<!-- auto-generated TOC -->\n\n{toc_block}\n',
+    readme_md
+)
 
-    rendered_readme = fix_links_in_readme(readme_md)
+    readme_html = fix_links_in_readme(readme_md)
 
-    landing_html = viewer_template.render(
-        filename="README.md",
-        site_base_path=site_base_path,
-        content=rendered_readme,
-        breadcrumbs="",
-        ga_tracking_id=GA_ID,
-        download_link=None
-    )
+    landing_html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GitSite Landing</title>
+  <style>
+    body {{ font-family: system-ui, sans-serif; margin: 2rem; background: #fff; color: #000; }}
+    a {{ color: #1a73e8; text-decoration: none; }}
+    a:hover {{ text-decoration: underline; }}
+    @media (prefers-color-scheme: dark) {{
+      body {{ background: #0d1117; color: #c9d1d9; }}
+      a {{ color: #58a6ff; }}
+    }}
+  </style>
+</head>
+<body>
+  {readme_html}
+</body>
+</html>"""
 
     with open(OUTPUT_DIR / "index.html", "w", encoding="utf-8") as f:
         f.write(landing_html)
-
 else:
     with open(OUTPUT_DIR / "index.html", "w", encoding="utf-8") as f:
         f.write(index_template.render(
