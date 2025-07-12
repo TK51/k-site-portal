@@ -1,30 +1,46 @@
-# k-site-public page
+# K-Site Public
 
-K-Site Public — Turn Any Folder Into a Website (No Backend, No Build Tools)
+K-Site Public — **Turn Any Folder Into a Website**  
+No backend. No build tools. No login.
 
-youtube: https://youtu.be/5VxGQyqw6gE
+---
 
-K-Site Public is a zero-login, no-build viewer that transforms any folder into a fully browsable static website — directly viewable via GitHub Pages.
+This mode transforms any GitHub folder into a fully browsable static website.  
+Built for structured projects, documentation, kits, and demos — with no install, no server, and no code required.
 
-🧱 No frameworks  
-🧰 No server  
-🚪 No login
+---
 
-Built for delivery of structured projects, documentation, kits, demos — anything you can organize in folders.
+## Features
 
-🖥 This video: Walkthrough of the "Public" regime  
-→ Auto-generates `index.html` and `-viewer.html`  for pages within repo
-→ Works on a public GitHub repo  (if the site-built logic is used)
-→ GA4-compatible (if needed)
+- Auto-generates `index.html` and `*-viewer.html` pages for all supported files  
+- Runs directly from a public GitHub repo (site-built logic required)  
+- Compatible with GA4 tracking for full engagement traceability  
+- Requires no frameworks, servers, or user accounts
 
-🔧 More modes:  
-• Public → https://tk51.github.io/k-site-portal/methods/ks-01-public-viewer.html 
-• Private ZIP → https://tk51.github.io/k-site-portal/methods/ks-02-private-viewer.html  
-• Desktop Folder Viewer → https://tk51.github.io/k-site-portal/methods/ks-03-core-viewer.html  
-• Auto-Zip Builder → https://tk51.github.io/k-site-portal/methods/ks-04-zip-viewer.html
+---
+
+## Use Cases
+
+- Deliver structured project documentation without hosting setups  
+- Showcase GitHub repos as navigable websites for hiring managers or clients  
+- Share method kits or onboarding instructions with zero-login access  
+- Publish technical portfolios or teaching materials directly via GitHub Pages
+
+---
+
+🎥 Public Mode Walkthrough  
+- YouTube: [K-Site Public Overview](https://youtu.be/5VxGQyqw6gE)
+
+---
+
+## Other Modes
+
+- [Private ZIP](https://tk51.github.io/k-site-portal/methods/ks-02-private-viewer.html) — Share zipped folder, view offline  
+- [Core Desktop](https://tk51.github.io/k-site-portal/methods/ks-03-core-viewer.html) — Desktop app: folder → HTML site  
+- [Zip Desktop](https://tk51.github.io/k-site-portal/methods/ks-04-zip-viewer.html) — Auto-generate zipped website from folder
+
+---
 
 📎 Built by Kay — https://linkedin.com/in/taras-khamardiuk  
-#ksite 
-#aiposbuilt
-#foldertransformationengine
-#fromukrainianswithlovetohumankind 🇺🇦
+
+#ksite #aiposbuilt #foldertransformationengine #fromukrainianswithlovetohumankind 🇺🇦
