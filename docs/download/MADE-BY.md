@@ -62,4 +62,4 @@ This system was built to speak without permission.
 No marketing. No onboarding. No barriers.  
 Just structure - from folder to signal.
 
-`#ksite #aiposbuilt #foldertransformationengine #fromukrainianswithlovetohumankind 🇺🇦`
+    `#ksite #aiposbuilt #foldertransformationengine #fromukrainianswithlovetohumankind 🇺🇦`
