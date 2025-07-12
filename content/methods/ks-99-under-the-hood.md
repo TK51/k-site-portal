@@ -1,5 +1,7 @@
 # What's under the hood?
 
+This shows how Jinja2-based static builds are used to turn folders into structured logic sites.  
+
 K-Site is a zero-GUI transformation engine that converts any folder into a static, navigable HTML site.  
 No servers. No frameworks. No runtime dependency chain.  
 Deploys as a .zip from a repo - or as a desktop app for one-click local builds.  
