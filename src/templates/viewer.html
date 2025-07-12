@@ -87,6 +87,14 @@
   <a class="download-button" href="{{ download_link }}">Download Raw File</a>
   {% endif %}
 
+  {% if file_extension in config.rules.download_extensions %}
+  <p>
+    <a class="download-button" href="{{ site_base_path }}download/{{ filename }}" download>
+      ⬇ Download {{ filename }}
+    </a>
+  </p>
+  {% endif %}
+
   <div style="margin-top: 2em;">
     <a class="nav-button" href="{{ site_base_path }}">Home</a>
     <a class="nav-button" href="javascript:handleBack()">Back</a>
