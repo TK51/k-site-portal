@@ -1,5 +1,7 @@
 # K-Site Core
 
+This is the base viewer to explore folder structures. Works in offline mode or GitHub pages.  
+
 K-Site Core — **Turn Any Folder Into a Website, Locally**  
 No server. No backend. No login.
 
