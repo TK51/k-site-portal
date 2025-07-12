@@ -17,5 +17,4 @@ Use it to share offline toolkits, docs, or deliverables - just unzip and view.
 
 ---
 
---
-Built by Kay → [LinkedIn](https://linkedin.com/in/taras-khamardiuk)
+-- Built by Kay → [LinkedIn](https://linkedin.com/in/taras-khamardiuk)
