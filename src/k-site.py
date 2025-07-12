@@ -78,15 +78,15 @@ for file in DOWNLOADS_SRC.iterdir():
     if file.suffix.lower() in [".zip", ".exe", ".appimage"]:
         shutil.copy2(file, DOWNLOAD_DIR / file.name)
 
-# === DOWNLOADS README PATCH
-downloads_readme = DOWNLOADS_SRC / "README.md"
-if downloads_readme.exists():
-    with open(downloads_readme, "r", encoding="utf-8") as f:
+# === DOWNLOADS VIEWERS RENDERING ===
+for file in DOWNLOADS_SRC.glob("*.md"):
+    with open(file, "r", encoding="utf-8") as f:
         raw = f.read()
-        content_html = fix_links_in_readme(raw)
+
+    content_html = fix_links_in_readme(raw)
 
     html = viewer_template.render(
-        filename="README.md",
+        filename=file.name,
         site_base_path=site_base_path,
         content=content_html,
         breadcrumbs="downloads",
@@ -94,8 +94,10 @@ if downloads_readme.exists():
         download_link=None
     )
 
-    downloads_index = DOWNLOAD_DIR / "index.html"
-    with open(downloads_index, "w", encoding="utf-8") as f:
+    output_filename = "index.html" if file.name == "README.md" else f"{file.stem}-viewer.html"
+    output_path = DOWNLOAD_DIR / output_filename
+
+    with open(output_path, "w", encoding="utf-8") as f:
         f.write(html)
 
 # === FILE PIPELINE ===
