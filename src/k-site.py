@@ -182,6 +182,10 @@ if methods_readme.exists():
     with open(methods_readme, "r", encoding="utf-8") as f:
         raw = f.read()
         rendered = fix_links_in_readme(raw)
+
+    # Ensure the target folder exists before writing
+    (OUTPUT_DIR / "methods").mkdir(parents=True, exist_ok=True)
+
     with open(OUTPUT_DIR / "methods" / "index.html", "w", encoding="utf-8") as f:
         f.write(rendered)
 
