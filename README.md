@@ -14,8 +14,9 @@ Just structure → site.
 
 ## Site Contents
 
-<!-- auto-generated TOC will be inserted here by build_readme_toc.py -->
-(Will list all files and folders as links, like Table of Contents)
+---
+
+<!-- auto-generated TOC -->
 
 ---
 
