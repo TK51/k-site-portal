@@ -247,13 +247,3 @@ else:
 
 # === ZIP PACKAGE
 shutil.make_archive("docs", "zip", OUTPUT_DIR)
-else:
-    with open(OUTPUT_DIR / "index.html", "w", encoding="utf-8") as f:
-        f.write(index_template.render(
-            folder="Root",
-            files=root_links,
-            site_base_path=site_base_path,
-        ))
-
-# === ZIP PACKAGE
-shutil.make_archive("docs", "zip", OUTPUT_DIR)
