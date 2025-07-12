@@ -1,4 +1,6 @@
-# K-Site Private
+# K-Site Private  
+Use this ZIP mode to send a frictionless viewer to contacts. No install, no login.
+
 
 Use this ZIP mode to send a frictionless viewer to contacts. No install, no login.  
 
