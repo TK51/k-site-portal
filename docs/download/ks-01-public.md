@@ -43,4 +43,4 @@ Built for structured projects, documentation, kits, and demos — with no instal
 
 📎 Built by Kay — https://linkedin.com/in/taras-khamardiuk  
 
-```#ksite #aiposbuilt #foldertransformationengine #fromukrainianswithlovetohumankind 🇺🇦```
+````#ksite #aiposbuilt #foldertransformationengine #fromukrainianswithlovetohumankind 🇺🇦````
